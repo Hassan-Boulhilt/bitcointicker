@@ -51,9 +51,9 @@ class PriceScreenState extends State<PriceScreen> {
 
   getPicker() {
     if (Platform.isIOS) {
-      return androidDropDownButton();
-    } else if (Platform.isAndroid) {
       return iosCupertinoPicker();
+    } else if (Platform.isAndroid) {
+      return androidDropDownButton();
     }
   }
 
